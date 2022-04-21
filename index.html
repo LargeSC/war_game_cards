@@ -1,0 +1,30 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="top">
+            <button class="btn new-deck" id="new-deck">New Deck</button>
+            <p id="remaining-cards">0 Cards Remaining</p>
+        </div>
+        <h2 id="message">Game of War!</h2>
+        <p class="points" id="computer-pts">Computer: </p>
+        <div id="cards">
+            <div class="card card-placeholder"></div>
+            <div class="card card-placeholder"></div>
+        </div>
+        <p class="points" id="player-pts">Me: </p>
+        <button class="btn draw-cards" id="draw-cards">Draw</button>
+        <div id="overlay">
+            <div id="final-message-container" class="modal">
+                <p id="final-message">This is the message</p>
+                <button id="reset-btn" class="btn">Reset Game</button>
+            </div>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

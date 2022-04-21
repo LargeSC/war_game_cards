@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+} 
+
+body{
+    background-image: url(./img/table.png);
+    background-color: green;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+h2{
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.btn{
+   background: yellow;
+   border: none; 
+   font-family: inherit;
+   padding: 0.3em 1.5em;
+   font-weight: 700;
+   cursor: pointer;
+   align-self: flex-start
+}
+
+.btn:hover,
+.btn:focus{
+    filter: brightness(0.8);
+    transform: scale(.98)
+}
+
+.btn:disabled{
+    opacity: .2;
+    cursor: no-drop;
+}
+
+.draw-cards{
+    width: 100%;
+    /* position: absolute; */
+    /* bottom: 0; */
+    font-size: 1.4rem;
+}
+
+.card{
+    display: block;
+    width: 100px;
+    height: 140px;
+    margin-bottom: 2rem;
+}
+.card:last-of-type{
+    margin-bottom: 0;
+}
+
+.card-placeholder{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+
+.top {
+    display: flex;
+    align-items: center;
+    align-self: flex-start
+}
+
+.top p{
+    margin: 0;
+    margin-left: 1em;
+}
+
+.flex{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 80%;
+}
+
+.points{
+    width: 50%;
+    /* border: solid 1px; */
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    
+}
+
+/* Modal */
+#overlay{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+    display:none;
+}
+
+.modal{
+    width: 70%;
+    min-width: 300px;
+    height: 30%;
+    position: relative;
+    top: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    
+}
+
+.modal p{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.modal .btn{
+    align-self: center;
+    transform: scale(1.3)
+}
+
+/* Media Query for large screens */
+@media (min-width:500px) {
+    .cards{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .card{
+        display: inline-block;
+        align-self: center;
+        justify-self: center;
+        margin: 0;
+        margin-left: 1rem;
+        width: 150px;
+        height: 210px;
+    }
+    .points{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 2.2rem;
+    }
+}
