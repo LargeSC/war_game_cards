@@ -13,6 +13,8 @@ body{
     background-image: url(./img/table.png);
     background-color: green;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,7 +138,7 @@ h2{
 }
 
 /* Media Query for large screens */
-@media (min-width:500px) {
+@media (min-width:450px) {
     .cards{
         display: flex;
         text-align: center;
